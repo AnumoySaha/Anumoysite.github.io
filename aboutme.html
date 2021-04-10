@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABoutme</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+      {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 60vh;
+    background-color: darkorchid;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+
+}
+.nav-logo h4{
+  color:chartreuse;
+}
+.nav-logo h4 span{
+  color: blue;
+}
+
+.nav-bar{
+  display: flex;
+  padding: 40px 120px;
+}
+.nav-logo img{
+  width: 135px;
+  border-radius: 50%;
+}
+.nav-links{
+  flex: 1;
+}
+.nav-links ul{
+  margin-left: 50px;
+  display: inline;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
+.nav-links ul a{
+  color: white;
+  text-decoration: transparent;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: slateblue;
+  display: block;
+  margin:auto;
+  transition:.5s;
+
+}
+.nav-links ul li:hover::after{
+  width: 100%;  
+}
+.btn{
+  padding: 10px 20px;
+  border: 0;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-links .btn{
+  float: right;
+}
+.banner-title{
+  margin: 80px 130px;
+  color: aliceblue;
+}
+.banner-title h1{
+  font-size: 64px;
+  margin-bottom: 30px;  
+}
+.banner-title h1 span{
+  color: lightgreen;
+}
+.vertical-bar{
+ height: 100%;
+ background: hotpink;
+ top:0;
+ left: 0;
+ position: absolute;
+}
+.search-icon{
+  height: 60%;
+  width:80px;
+}
+.search-icon .fa{
+  margin: 45px 23px;
+  display:block;
+  color: aquamarine;
+  font-size: 30px;
+  cursor: pointer;
+}
+.social-icon{
+  height: 35%;
+  width: 80px;
+  background: #ffd700;
+  text-align: center;
+  padding-top: 27%;
+  bottom: 0;
+  position: absolute;
+}
+.social-icon .fa{
+  margin: 15px 23px;
+  display: block;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.notifications{
+  display: flex;
+  width: 400px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: greenyellow;
+  align-items: center;
+}
+.contents{
+  flex-basis: 50%;
+  padding: 10px;
+}
+.notification-img{
+  flex-basis: 50%;  
+}
+.notification-img img{
+  width: 100%;
+}
+.contents a{
+  text-decoration: none; 
+  color: black;
+  font-size: 13px;
+  margin: 0 10px;
+}
+.contents p{
+  text-align: right;
+  margin-top: 10px;
+}
+.nav-bar .fa{
+  display: none;
+}
+.contents p{
+    text-align: left;
+}
+.txt {
+            position: absolut;
+            text-align: center;
+            bottom: 10%;
+            padding: 10px;
+            background-color: #663A82;
+            color: white;
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 10px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        
+        .fa-close {
+            display: none;
+        }
+        
+        .fa-bars {
+            display: none;
+        }
+        
+        .fa-instagram {
+            background: #e907b0;
+            color: white;
+        }
+        
+        .fa-github {
+            background: black;
+            color: white;
+        }
+        .txt1 {
+            font: italic;
+            font-size: 20px;
+            color: dodgerblue;
+        }
+        .h1 {
+            color:aliceblue
+            
+        }
+        
+        .h1 span {
+            color: greenyellow;
+        }
+        
+        .h1 span1 {
+            color: lightseagreen;
+        }
+        
+        .h1 span2 {
+            color: maroon;
+        }
+        
+        .h2 {
+            text-align: center;
+            color: rgb(219, 101, 5);
+        }
+@media (max-width: 700px){
+  .vertical-bar{
+    display: none;
+  }
+  .banner-title{
+    margin: 80px 40px;
+  }
+  .banner-title h1{
+    font-size: 50px;
+  }
+  .notifications{
+    width: 100%;
+  }
+  .nav-bar{
+    padding: 10px 30px;
+  }
+  .fa-bars{
+    position: absolute;
+    right: 20px;
+    top: 10px;   
+  }
+  .nav-bar .fa{
+    display: block;
+    color: cornsilk;
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links{
+    height: 60vh;
+    width: 200px;
+    background: fuchsia;
+    top: 0;
+    right: -200px;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .nav-links ul a{
+    display: block;
+  }
+  .nav-links .btn{
+    float: none;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .h1{
+      font-size: 20px;
+
+  }
+
+}
+
+
+    </style>
+    <body>
+        <div class="hero">
+          <div class="nav-bar">
+            <div class="nav-logo">
+            <img src="https://th.bing.com/th/id/R0097a566e03677a4d3361e4a47eb13d4?rik=RkkG3y5sqvwSqw&riu=http%3a%2f%2fwww.redolab.com%2fwp-content%2fuploads%2flogos_REdOlab_as-1024x665.jpg&ehk=PVvtCpJWCRzeUFIpMfEYzpQGIE40mX70X6isXuS3hIs%3d&risl=&pid=ImgRaw">
+            <h4>Anumoy<span>Site</span>.in</h4>
+            </div>
+            <div class="nav-links" id="nav-links">
+              <i class="fa fa-close" onclick="closeMenu()"></i>
+              <ul>
+                <a href="C:\Users\Anumoy Saha\OneDrive\Desktop\MYSITEEE.html"><li>HOME</li></a>
+                <a href="#"><li>ABOUT ME</li></a>
+                <a href="C:\Users\Anumoy Saha\OneDrive\Desktop\COdes.html"><li>CODES</li></a>
+                
+              </ul>
+              <button type="button" class="btn">JOIN</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </div>
+          <div class="h1">
+            <h1>&nbsp;&nbsp;Hellow everyone <span>I am</span>
+                <span1>&nbsp;&nbsp;Anumoy Saha</span1> and
+                <span2>&nbsp;&nbsp;welcome to About me</span2>
+            </h1>
+        </div>
+        </div><br/>
+        <br/>
+    
+        <div class="h2">
+            <h2><u>ABOUT ME</u></h2>
+        </div>
+        <br/>
+        <br/>
+        <center><img src="https://th.bing.com/th/id/OIP.NGNR7qXHZo0F8lkHrclk0AHaEp?w=296&h=185&c=7&o=5&dpr=1.25&pid=1.7" width="300" height="200"></center>
+        <h2>YouTube</h2>
+        <div class="txt1">
+            Me and my freind have three youtube channels named ATS VINES, CLOSE UP CARD TRICKER and Crazy Ones. The first one is about funny videos where we have 208 subscribers and the sceond one is about magic tutorials where we have 87 sub and the third one is
+            about cinematic vlogging where we have 32 subs.We do youtbe for the audience and our enjoyment. So, go and subscribe our channels watc our videos and comment below how are they.
+        </div>
+        <br/>
+        <center><img src="https://th.bing.com/th/id/R4e6b5bbc7a0b2735071299bb51037ae3?rik=kg%2fb3pJoVlOI%2bQ&pid=ImgRaw" width="300" height="200"></center>
+        <h2>Magician</h2>
+        <div class="txt1">
+            I am a close up magician. I do magic with cards and coin and with some other things.I also can do some kind mind reading magics.Show my magics in youtube and instagram.
+        </div>
+        <br/>
+        <center><img src="https://th.bing.com/th/id/Rb184ee553e05c83b879ceaea4e181f11?rik=rfgMHXYJ%2fFbD4A&pid=ImgRaw" width="300" height="200"></center>
+        <h2>Programming</h2>
+        <div class="txt1">
+            I am an intermidiate level programmer.I have knowledge on C,C++,html,css,js and python.
+        </div>
+        <br/>
+        <img src="https://www.pinclipart.com/picdir/big/539-5392404_transparent-c-language-logo-png-clipart.png" width="38" height="30">
+        <img src="https://th.bing.com/th/id/R4fce8d006f854df907359e7784f67022?rik=VflIGrAZaMRa%2bQ&pid=ImgRaw" width="40" height="30">
+        <img src="https://th.bing.com/th/id/Raa569c82139d41b19c244f4d2e06b94e?rik=FvQWAjQHCUv1MA&riu=http%3a%2f%2fwww.rogerperkin.co.uk%2fwp-content%2fuploads%2f2016%2f12%2fpython-transparent-logo.png&ehk=zxvV5Wq0Lgk366aS67nZa9JluZQTp9INPdskmLCX54c%3d&risl=&pid=ImgRaw"
+            width="40" height="30">
+        <img src="https://th.bing.com/th/id/R2299a1574d8f777ca5224b315be6df02?rik=3JLo8AO22k4IjQ&pid=ImgRaw" width="40" height="30">
+        <img src="https://th.bing.com/th/id/OIP.oy-DqixnUFjkoFoP1NoF6wHaHa?pid=ImgDet&rs=1" width="40" height="30">
+        <br/>
+        <br/>
+        <div class="row2">
+            <div class="column2">
+                <div class="txt"><b>Proudly Created By Anumoy Saha</b></div>
+                <div class="txt"><b>Copyright © 2021 Design AS</b></div>
+                <div class="txt">If You like this page send me feedback</div>
+                <a href="https://mail.google.com/">
+                    <div class="txt"><b>anumoysaha007@gmail.com</b></div>
+                </a>
+                <div class="txt"><b>Find me on</b></div>
+                <div class="txt">
+                    <a href="https://www.facebook.com/atsvines" class="fa fa-facebook"></a>&nbsp;
+                    <a href="https://www.google.com/search?q=ats+vines&source=lmns&tbm=vid&bih=754&biw=1536&hl=en&sa=X&ved=2ahUKEwjvwdj_7b7vAhUKXX0KHcQZBUkQ_AUoAXoECAEQAQ"><i class="fa fa-google"></i></a>&nbsp;
+                    <a href="https://instagram.com/anumoy_saha?igshid=zjs0t0dpldq4"><i class="fa fa-instagram"></i></a>&nbsp;
+                    <a href="https://www.youtube.com/channel/UCKLs9C_uFVNzC0uh1exHk0w"><i class="fa fa-youtube"></i></a>&nbsp;
+                    <a href="https://github.com/AnumoySaha"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script>
+          var show= document.getElementById("nav-links")
+          function showMenu(){
+            show.style.right="0";
+          }
+          function closeMenu(){
+            show.style.right= "-200px";
+          }
+        </script>
+    </body>
+</html>
+
