@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StudioPhotomix.in</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+      {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 100vh;
+    background-color: darkorchid;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+
+}
+.nav-logo h4{
+  color:chartreuse;
+}
+.nav-logo h4 span{
+  color: blue;
+}
+
+.nav-bar{
+  display: flex;
+  padding: 40px 120px;
+}
+.nav-logo img{
+  width: 135px;
+  border-radius: 50%;
+}
+.nav-links{
+  flex: 1;
+}
+.nav-links ul{
+  margin-left: 50px;
+  display: inline;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
+.nav-links ul a{
+  color: white;
+  text-decoration: transparent;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: slateblue;
+  display: block;
+  margin:auto;
+  transition:.5s;
+
+}
+.nav-links ul li:hover::after{
+  width: 100%;  
+}
+.btn{
+  padding: 10px 20px;
+  border: 0;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-links .btn{
+  float: right;
+}
+.banner-title{
+  margin: 80px 130px;
+  color: aliceblue;
+}
+.banner-title h1{
+  font-size: 64px;
+  margin-bottom: 30px;  
+}
+.banner-title h1 span{
+  color: lightgreen;
+}
+.vertical-bar{
+ height: 100%;
+ background: hotpink;
+ top:0;
+ left: 0;
+ position: absolute;
+}
+.search-icon{
+  height: 60%;
+  width:80px;
+}
+.search-icon .fa{
+  margin: 45px 23px;
+  display:block;
+  color: aquamarine;
+  font-size: 30px;
+  cursor: pointer;
+}
+.social-icon{
+  height: 35%;
+  width: 80px;
+  background: #ffd700;
+  text-align: center;
+  padding-top: 27%;
+  bottom: 0;
+  position: absolute;
+}
+.social-icon .fa{
+  margin: 15px 23px;
+  display: block;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.notifications{
+  display: flex;
+  width: 400px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: greenyellow;
+  align-items: center;
+}
+.contents{
+  flex-basis: 50%;
+  padding: 10px;
+}
+.notification-img{
+  flex-basis: 50%;  
+}
+.notification-img img{
+  width: 100%;
+}
+.contents a{
+  text-decoration: none; 
+  color: black;
+  font-size: 13px;
+  margin: 0 10px;
+}
+.contents p{
+  text-align: right;
+  margin-top: 10px;
+}
+.nav-bar .fa{
+  display: none;
+}
+.contents p{
+    text-align: left;
+}
+.txt {
+            position: absolut;
+            text-align: center;
+            bottom: 10%;
+            padding: 10px;
+            background-color: #663A82;
+            color: white;
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 10px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        
+        .fa-close {
+            display: none;
+        }
+        
+        .fa-bars {
+            display: none;
+        }
+        
+        .fa-instagram {
+            background: #e907b0;
+            color: white;
+        }
+        
+        .fa-github {
+            background: black;
+            color: white;
+        }
+@media (max-width: 700px){
+  .vertical-bar{
+    display: none;
+  }
+  .banner-title{
+    margin: 80px 40px;
+  }
+  .banner-title h1{
+    font-size: 50px;
+  }
+  .notifications{
+    width: 100%;
+  }
+  .nav-bar{
+    padding: 10px 30px;
+  }
+  .fa-bars{
+    position: absolute;
+    right: 20px;
+    top: 10px;   
+  }
+  .nav-bar .fa{
+    display: block;
+    color: cornsilk;
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links{
+    height: 100vh;
+    width: 200px;
+    background: fuchsia;
+    top: 0;
+    right: -200px;
+    position: absolute;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .nav-links ul a{
+    display: block;
+  }
+  .nav-links .btn{
+    float: none;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+}
+
+
+    </style>
+    <body>
+        <div class="hero">
+          <div class="nav-bar">
+            <div class="nav-logo">
+            <img src="https://th.bing.com/th/id/R0097a566e03677a4d3361e4a47eb13d4?rik=RkkG3y5sqvwSqw&riu=http%3a%2f%2fwww.redolab.com%2fwp-content%2fuploads%2flogos_REdOlab_as-1024x665.jpg&ehk=PVvtCpJWCRzeUFIpMfEYzpQGIE40mX70X6isXuS3hIs%3d&risl=&pid=ImgRaw">
+            <h4>&nbsp;&nbsp;&nbsp;Anumoy<span>Site</span>.in</h4>
+            </div>
+            <div class="nav-links" id="nav-links">
+              <i class="fa fa-close" onclick="closeMenu()"></i>
+              <ul>
+                <a href="#"><li>HOME</li></a>
+                <a href="C:\Users\Anumoy Saha\OneDrive\Desktop\aboutme.html"><li>ABOUT ME</li></a>
+                <a href="C:\Users\Anumoy Saha\OneDrive\Desktop\COdes.html"><li>CODES</li></a>
+                
+              </ul>
+              <a href="C:\Users\Anumoy Saha\OneDrive\Desktop\Login.html"><button type="button" class="btn">JOIN</button></a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </div>
+          <div class="banner-title">
+            <h1>Hellow everyone &nbsp;<span>I am<br/> Anumoy Saha</span> Welcome to my site.</h1>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
+          
+          <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTjBZH3emOBebm7ST29x8us0xEOd7cDULtA&usqp=CAU" width="200" height="200"></center>
+        
+
+        
+        <div class="contents p">
+            &nbsp;&nbsp;
+            <p>I am a class XI student. I read in Barasat PCS GOVT HIGH SCHOOL. My subject combinations are Physics,Math.Chemistry and CS. I am a freelancer an affiliate marketer in amazon.in. I am a web devloper website designer. I can make a webitse for your shop or for you personal to enrich more people over the world.
+            </p>
+        </div>
+        <center><img src="https://th.bing.com/th/id/OIP.XOfT8Pon4zYrEuOHba-i-gHaEf?w=309&h=187&c=7&o=5&dpr=1.25&pid=1.7" width="250" height="200"></center>
+    <center>
+        <h3>Learn Webdesigning With me</h3>
+    </center>
+    <center><a href="C:\Users\Anumoy Saha\OneDrive\Desktop\learnnow.html"><button type="button" class="btn">Learn Now</button></a></center>
+    <center>
+        <p>Learn to design a webpage and earn money from home</p>
+    </center>
+    <br/>
+    <br/>
+    <center><img src="data:image/jpeg;base64,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"
+            width="250" height="200"></center>
+    <center>
+        <h3>Make a snake game</h3>
+    </center>
+    <a href="https://drive.google.com/file/d/1N1jiZEaxc1T_pkOuRyAVby4VgXJDOWfn/view?usp=sharing" "><center><h4>Get the full code</h4></center></a>
+             
+             <center><p>It's a simple snake game<br/> for pc made with python language.<br/>Copy the code and paste it <br/>in any pyhton compiler and<br/> impress your freinds only at Rs-10.</p></center>
+             <br/>
+             <br/>
+             <center><img src="https://th.bing.com/th/id/OIP.AGAychBSYX4EO5HN89vy0gHaEs?pid=ImgDet&w=647&h=410&rs=1 " width="250 " height="200 "></center>
+             <center><h3>Create a Webpage</h3></center>
+    
+             <a href="https://docs.google.com/document/d/1m8yjFBGXsxSBFUwuMmFiXiserthFc7S9JRdmXqivLJw/edit?usp=drivesdk "><center><h4>Get the full code</h4></center></a>
+             <center><p>Get this webpage code<br/>and show this project to others<br/> or in your school college.</p></center>
+             <br/>
+             <br/>
+             <div class="row2 ">
+                <div class="column2 ">
+                <div class="txt "><b>Proudly Created By Anumoy Saha</b></div>
+                <div class="txt "><b>Copyright © 2021 Design AS</b></div>
+                <div class="txt ">If You like this page send me feedback</div>
+                <a href="https://mail.google.com/ "><div class="txt "><b>anumoysaha007@gmail.com</b></div></a>
+                <div class="txt "><b>Find me on</b></div>
+                <div class="txt "><a href="https://www.facebook.com/atsvines " class="fa fa-facebook "></a>&nbsp;
+                <a href="https://www.google.com/search?q=ats+vines&source=lmns&tbm=vid&bih=754&biw=1536&hl=en&sa=X&ved=2ahUKEwjvwdj_7b7vAhUKXX0KHcQZBUkQ_AUoAXoECAEQAQ "><i class="fa fa-google "></i></a>&nbsp;
+                <a href="https://instagram.com/anumoy_saha?igshid=zjs0t0dpldq4 "><i class="fa fa-instagram "></i></a>&nbsp;
+                <a href="https://www.youtube.com/channel/UCKLs9C_uFVNzC0uh1exHk0w "><i class="fa fa-youtube "></i></a>&nbsp;
+                <a href="https://github.com/AnumoySaha "><i class="fa fa-github "></i></a>
+                </div>
+                </div>
+
+        <script>
+          var show= document.getElementById("nav-links")
+          function showMenu(){
+            show.style.right="0";
+          }
+          function closeMenu(){
+            show.style.right= "-200px";
+          }
+        </script>
+    </body>
+</html>
+
